@@ -13,7 +13,7 @@ def draw(name_file, name_image, size):
 
     # display points at given coordinates
     for coordinates in dataset:
-        dr.point((int(coordinates[3:]), int(coordinates[:3])), 0)
+        dr.point((int(coordinates[3:]), int(coordinates[:3])), fill = "black")
 
     # show the picture
     img.show()
@@ -21,4 +21,4 @@ def draw(name_file, name_image, size):
     img.save(name_image, "PNG")
 
 
-draw("DS6.txt", "result.png", (960, 540))
+draw("DS1.txt", "result.png", (960, 540))
